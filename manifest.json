@@ -1,0 +1,24 @@
+{
+   "browser_action": {
+      "default_icon": "icon-48-on.png",
+      "default_popup": "popup.html",
+      "default_title": "LaunchPad"
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "*://*/*" ],
+	  "run_at": "document_end"
+   } ],
+   "description": "Dynamically insert an Adobe Launch container tag into open webpages for demos and proof of concept projects.",
+   "manifest_version": 2,
+   "name": "LaunchPad: Adobe Launch Injector",
+   "permissions": [ "activeTab", "http://*/*", "https://*/*", "webRequest", "webRequestBlocking", "tabs", "storage" ],
+   "short_name": "ADTMD",
+   "version": "1.0",
+   "content_security_policy": "script-src 'self' https://assets.adobedtm.com; object-src 'self'",
+   "icons": {
+      "128": "icon-128-on.png",
+      "16": "icon-16-on.png",
+      "48": "icon-48-on.png"
+   }
+}
