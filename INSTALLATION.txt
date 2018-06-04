@@ -13,6 +13,7 @@
 5. Drag full LaunchPad folder onto open extensions tab.
 6. Developer mode (tick box) will need to be enabled to use the extension as it has not been installed from the Chrome Store.
 7. Use the DTM Debugger extension from Search Discovery to run it in Debug mode - it should find the container next time you reload the page.
+8. TIP: In Adobe Launch create a Rule that only fires for the domain you wish to demo on. That way you can use the same container and Extension setup for all demos without having to re-build each time.
 
 Copy entire folder and repeat the above for as many unique Launch libraries & domains as required.
 Recommend renaming folder to "launchpad-injector-<clientName>" for each instance.
